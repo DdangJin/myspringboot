@@ -56,7 +56,7 @@ public class UserResource {
     // delete user
     // 1. method 선언 (파라미터, 리턴값 고려)
     // 2. URI 지정
-    // 3. service.delete -> 미완성
+    // 3. service.deleteById
     @DeleteMapping("/users/{id}")
     public ResponseEntity<Object> deleteUser(@PathVariable int id) {
         User deletedUser = service.deleteById(id);
