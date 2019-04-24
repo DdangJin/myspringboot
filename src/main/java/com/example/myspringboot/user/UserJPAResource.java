@@ -74,7 +74,7 @@ public class UserJPAResource {
 
     }
 
-/*    @GetMapping("/jpa/users/{id}/posts")
+    @GetMapping("/jpa/users/{id}/posts")
     public List<Post> retrieveAllUsers(@PathVariable int id) {
         Optional<User> userOptional = userRepository.findById(id);
 
@@ -83,7 +83,7 @@ public class UserJPAResource {
         }
 
         return userOptional.get().getPosts();
-    }*/
+    }
 
 
     @PostMapping("/jpa/users/{id}/posts")
