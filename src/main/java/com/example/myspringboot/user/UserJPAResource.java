@@ -17,7 +17,6 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @RestController
 public class UserJPAResource {
-
     @Autowired
     private UserRepository userRepository;
 
@@ -71,7 +70,6 @@ public class UserJPAResource {
                 .buildAndExpand(savedUser.getId()).toUri();
 
         return ResponseEntity.created(location).build();
-
     }
 
     @GetMapping("/jpa/users/{id}/posts")
@@ -105,6 +103,5 @@ public class UserJPAResource {
                 .toUri();
 
         return ResponseEntity.created(location).build();
-
     }
 }

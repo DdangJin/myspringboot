@@ -8,7 +8,6 @@ import javax.persistence.*;
 @Entity
 @Data
 public class Post {
-
     @Id
     @GeneratedValue
     private Integer id;
@@ -22,5 +21,4 @@ public class Post {
     public String toString() {
         return String.format("Post [id=%s, description=%s]", id, description);
     }
-
 }
